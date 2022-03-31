@@ -3,7 +3,7 @@
 #include"iostream"
 using namespace std;
 
-int GetMax(int a, int b)   //µÃµ½Á½¸öÊıµÄ×î´óÖµ
+int GetMax(int a, int b)   //å¾—åˆ°ä¸¤ä¸ªæ•°çš„æœ€å¤§å€¼
 {
 	return (a) > (b) ? (a) : (b);
 }
@@ -26,12 +26,12 @@ int GetMaxAddOfArray(int* arr, int sz)
 		return 0;
 
 
-	int Sum = arr[0];   //ÁÙÊ±×î´óÖµ
-	int MAX = arr[0];   //±È½ÏÖ®ºóµÄ×î´óÖµ
+	int Sum = arr[0];   //ä¸´æ—¶æœ€å¤§å€¼
+	int MAX = arr[0];   //æ¯”è¾ƒä¹‹åçš„æœ€å¤§å€¼
 
 	for (int i = 1; i < sz; i++)
 	{
-		Sum = GetMax(Sum + arr[i], arr[i]);   //×´Ì¬·½³Ì
+		Sum = GetMax(Sum + arr[i], arr[i]);   //çŠ¶æ€æ–¹ç¨‹
 
 		if (Sum >= MAX)
 			MAX = Sum;
@@ -55,14 +55,5 @@ int zuoye1(int n0, int* array1) {
 
 int main()
 {
-	int zs;
-	int array2[20];
-	int i,max;
-	scanf_s("%d",&zs);
-	for (i = 0; i < zs; i++) {
-		scanf_s("%d",&array2[i]);
-	}
-	max = zuoye1(zs, array2);
-	printf_s("%d",max);
 	return 0;
 }
